@@ -110,10 +110,10 @@ export const hackathons: Hackathon[] = [
 ];
 
 export const certifications = [
-  "Google IT Support Professional Certificate",
+  "Google IT Support Professional Certificate (Coursera)",
   "JPMorgan Chase Software Engineering Simulation (Forage)",
-  "IBM Front-End Development with React",
-  "IBM Introduction to Machine Learning",
+  "IBM Front-End Development with React (Coursera)",
+  "IBM Introduction to Machine Learning (Coursera)",
   "Microsoft Azure Fundamentals (AZ-900)",
 ];
 
