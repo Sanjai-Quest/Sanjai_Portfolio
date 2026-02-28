@@ -90,16 +90,16 @@ export interface Hackathon {
 
 export const hackathons: Hackathon[] = [
   {
+    name: "EcoQuest Hackathon (2025)",
+    prize: "1st Prize Winner",
+    icon: "🥇",
+    description: "Developed and presented an affordable smart handband solution with integrated emergency safety buttons; recognized for innovation and rapid first response capability.",
+  },
+  {
     name: "Drestein No Code Rush Hackathon (2025)",
     prize: "2nd Prize Winner",
     icon: "🏆",
     description: "Built an AI-powered career guidance platform; recognized for system design, idea clarity, and practical problem-solving",
-  },
-  {
-    name: "EcoQuest Hackathon",
-    prize: "1st Prize Winner",
-    icon: "🥇",
-    description: "Developed a sustainability solution using technology-driven insights; awarded for innovation and real-world relevance",
   },
   {
     name: "VIT Chennai Hackathons (x2)",
