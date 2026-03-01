@@ -24,7 +24,7 @@ export const internship = {
   role: "AI Intern",
   company: "Retech",
   type: "Remote",
-  duration: "Jan 2025 – Feb 2025",
+  duration: "Dec 2024 – Jan 2025",
   paid: false,
   bullets: [
     "Worked on AI-enabled backend systems, focusing on API integration and backend logic (not model training)",
