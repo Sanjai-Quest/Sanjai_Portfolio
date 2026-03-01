@@ -109,10 +109,10 @@
     mask-size: 150%;
     mask-position: top calc(200% - (var(--background-y) * 5)) left calc(100% - var(--background-x));
     transition: filter 0.8s ease;
-    filter: opacity(0.3);
+    filter: opacity(0.2);
     animation: holo-bg 18s linear infinite;
     animation-play-state: running;
-    mix-blend-mode: soft-light;
+    mix-blend-mode: overlay;
 }
 
 .pc-shine,
@@ -142,9 +142,9 @@
             #0e152e 10%,
             #0e152e 12%),
         radial-gradient(farthest-corner circle at var(--pointer-x) var(--pointer-y),
-            hsla(0, 0%, 0%, 0.1) 12%,
-            hsla(0, 0%, 0%, 0.15) 20%,
-            hsla(0, 0%, 0%, 0.25) 120%);
+            rgba(0, 0, 0, 0.1) 12%,
+            rgba(0, 0, 0, 0.15) 20%,
+            rgba(0, 0, 0, 0.25) 120%);
     background-position:
         0 var(--background-y),
         var(--background-x) var(--background-y),
@@ -365,18 +365,15 @@
 }
 
 .pc-details h3 {
+    color: #fff;
     font-weight: 600;
     margin: 0;
     font-size: min(5svh, 3em);
-    margin: 0;
-    background-image: linear-gradient(to bottom, #fff, #6f6fbe);
-    background-size: 1em 1.5em;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
 }
 
 .pc-details p {
+    color: rgba(255, 255, 255, 0.8);
     font-weight: 600;
     position: relative;
     top: -12px;
@@ -384,11 +381,7 @@
     font-size: 16px;
     margin: 0 auto;
     width: min-content;
-    background-image: linear-gradient(to bottom, #fff, #4a4ac0);
-    background-size: 1em 1.5em;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 @keyframes glow-bg {
