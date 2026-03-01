@@ -35,6 +35,7 @@ interface ProfileCardProps {
     contactText?: string;
     showUserInfo?: boolean;
     onContactClick?: () => void;
+    linkedin?: string;
 }
 
 const ProfileCardComponent: React.FC<ProfileCardProps> = ({
@@ -56,7 +57,8 @@ const ProfileCardComponent: React.FC<ProfileCardProps> = ({
     status = 'Online',
     contactText = 'Contact',
     showUserInfo = true,
-    onContactClick
+    onContactClick,
+    linkedin = 'sanjai-l-508a112b2'
 }) => {
     const wrapRef = useRef<HTMLDivElement>(null);
     const shellRef = useRef<HTMLDivElement>(null);
@@ -362,7 +364,7 @@ const ProfileCardComponent: React.FC<ProfileCardProps> = ({
                                             />
                                         </div>
                                         <div className="pc-user-text">
-                                            <div className="pc-handle">@{handle}</div>
+                                            <div className="pc-handle">LinkedIn: {linkedin}</div>
                                             <div className="pc-status">{status}</div>
                                         </div>
                                     </div>
