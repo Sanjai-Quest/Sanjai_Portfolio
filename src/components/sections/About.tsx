@@ -28,7 +28,7 @@ const About = () => (
             handle="Sanjai-Quest"
             status="Online"
             contactText="Contact Me"
-            avatarUrl="/my_pic.png"
+            avatarUrl="/SanjaiProfilePic.png"
             showUserInfo={true}
             enableTilt={true}
             enableMobileTilt={false}
