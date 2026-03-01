@@ -38,7 +38,7 @@ const About = () => (
             }}
             behindGlowColor="rgba(125, 190, 255, 0.67)"
             behindGlowEnabled
-            innerGradient="linear-gradient(145deg,#60496e8c 0%,#71C4FF44 100%)"
+            innerGradient="linear-gradient(145deg, rgba(0,0,0,0.9) 0%, rgba(20,20,30,0.8) 100%)"
             linkedin="sanjai-l-508a112b2"
           />
         </ScrollReveal>
