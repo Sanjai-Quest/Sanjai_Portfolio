@@ -67,7 +67,7 @@
     box-shadow: rgba(0, 0, 0, 0.8) calc((var(--pointer-from-left) * 10px) - 3px) calc((var(--pointer-from-top) * 20px) - 6px) 20px -5px;
     transition: transform 1s ease;
     transform: translateZ(0) rotateX(0deg) rotateY(0deg);
-    background: rgba(0, 0, 0, 0.9);
+    background: #000;
     backface-visibility: hidden;
     overflow: hidden;
 }
@@ -98,7 +98,7 @@
     inset: 0;
     position: absolute;
     background-image: var(--inner-gradient);
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: #000;
     transform: none;
 }
 
@@ -243,10 +243,13 @@
     left: 50%;
     top: 50%;
     transform-origin: center;
-    transform: translate(-50%, -50%) translate3d(calc((var(--pointer-from-left) - 0.5) * 10px), calc((var(--pointer-from-top) - 0.5) * 10px), 0);
-    backface-visibility: hidden;
-    will-change: transform;
-    transition: transform 120ms ease-out;
+    filter: grayscale(100%);
+    transition: transform 120ms ease-out, filter 0.5s ease;
+}
+
+.pc-card-wrapper:hover .avatar,
+.pc-card-wrapper.active .avatar {
+    filter: grayscale(0%);
 }
 
 .pc-avatar-content::before {
