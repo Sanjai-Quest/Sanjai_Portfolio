@@ -85,6 +85,7 @@
 .pc-card-shell {
     position: relative;
     z-index: 1;
+    background: #000 !important;
 }
 
 .pc-inside>* {
@@ -235,14 +236,15 @@
     background: #000;
 }
 
-width: 105%;
-height: 105%;
-object-fit: cover;
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%) translate3d(calc((var(--pointer-from-left) - 0.5) * 20px), calc((var(--pointer-from-top) - 0.5) * 20px), 0);
-z-index: 0;
+.pc-avatar-content .avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translate3d(calc((var(--pointer-from-left) - 0.5) * 24px), calc((var(--pointer-from-top) - 0.5) * 24px), 0);
+    z-index: 0;
 }
 
 .pc-avatar-content::before {
